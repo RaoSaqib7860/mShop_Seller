@@ -1,0 +1,12 @@
+<svg id="Edit_calendar" data-name="Edit/calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Edit_calendar-2" data-name="Edit/calendar">
+    <path id="Vector_Stroke_" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h19a.75.75,0,0,1,.75.75v10.5A1.75,1.75,0,0,1,18.75,13h-17A1.75,1.75,0,0,1,0,11.25Zm1.5.75v9.75a.25.25,0,0,0,.25.25h17a.25.25,0,0,0,.25-.25V1.5Z" transform="translate(1.75 8.75)" fill="#192129"/>
+    <path id="Vector_Stroke_2" data-name="Vector (Stroke)" d="M1.75,1.5a.25.25,0,0,0-.25.25V6H19V1.75a.25.25,0,0,0-.25-.25ZM0,1.75A1.75,1.75,0,0,1,1.75,0h17A1.75,1.75,0,0,1,20.5,1.75v5a.75.75,0,0,1-.75.75H.75A.75.75,0,0,1,0,6.75Z" transform="translate(1.75 2.75)" fill="#192129"/>
+    <path id="Vector_Stroke_3" data-name="Vector (Stroke)" d="M.75,0A.75.75,0,0,1,1.5.75v4a.75.75,0,0,1-1.5,0v-4A.75.75,0,0,1,.75,0Z" transform="translate(7.25 1.25)" fill="#192129"/>
+    <path id="Vector_Stroke_4" data-name="Vector (Stroke)" d="M.75,0A.75.75,0,0,1,1.5.75v4a.75.75,0,0,1-1.5,0v-4A.75.75,0,0,1,.75,0Z" transform="translate(15.25 1.25)" fill="#192129"/>
+    <path id="Vector_Stroke_5" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h3a.75.75,0,0,1,0,1.5h-3A.75.75,0,0,1,0,.75Z" transform="translate(13.25 16.25)" fill="#192129"/>
+    <path id="Vector_Stroke_6" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h3a.75.75,0,0,1,0,1.5h-3A.75.75,0,0,1,0,.75Z" transform="translate(6.25 16.25)" fill="#192129"/>
+    <path id="Vector_Stroke_7" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h3a.75.75,0,0,1,0,1.5h-3A.75.75,0,0,1,0,.75Z" transform="translate(13.25 12.25)" fill="#192129"/>
+    <path id="Vector_Stroke_8" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h3a.75.75,0,0,1,0,1.5h-3A.75.75,0,0,1,0,.75Z" transform="translate(6.25 12.25)" fill="#192129"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="Cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Base_shopping-cart-one" data-name="Base/shopping-cart-one">
+    <g id="Base_shopping-cart-one-2" data-name="Base/shopping-cart-one">
+      <path id="Vector" d="M1.75,3.5A1.75,1.75,0,1,0,0,1.75,1.75,1.75,0,0,0,1.75,3.5Z" transform="translate(8.5 19)" fill="#868e96"/>
+      <path id="Vector-2" data-name="Vector" d="M1.75,3.5A1.75,1.75,0,1,0,0,1.75,1.75,1.75,0,0,0,1.75,3.5Z" transform="translate(17 19)" fill="#868e96"/>
+      <path id="Vector_Stroke_" data-name="Vector (Stroke)" d="M.126.334A.75.75,0,0,1,1.166.126l4.5,3a.75.75,0,0,1,.315.458L8.349,14h8.84l2.059-7h-8.5a.75.75,0,1,1,0-1.5h9.5a.75.75,0,0,1,.72.962l-2.5,8.5a.75.75,0,0,1-.72.538h-10a.75.75,0,0,1-.731-.584L4.585,4.208.334,1.374A.75.75,0,0,1,.126.334Z" transform="translate(1.75 2.25)" fill="#868e96"/>
+      <path id="Vector_Stroke_2" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h8a.75.75,0,0,1,0,1.5h-8A.75.75,0,0,1,0,.75Z" transform="translate(11.75 12.25)" fill="#868e96"/>
+    </g>
+  </g>
+</svg>

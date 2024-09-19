@@ -1,0 +1,8 @@
+<svg id="Hardware_truck" data-name="Hardware/truck" xmlns="http://www.w3.org/2000/svg" width="23.5" height="15.5" viewBox="0 0 23.5 15.5">
+  <g id="Hardware_truck-2" data-name="Hardware/truck">
+    <path id="Vector_Stroke_" data-name="Vector (Stroke)" d="M0,2.75A2.75,2.75,0,1,1,2.75,5.5,2.75,2.75,0,0,1,0,2.75ZM2.75,1.5A1.25,1.25,0,1,0,4,2.75,1.25,1.25,0,0,0,2.75,1.5Z" transform="translate(3 10)" fill="#192129"/>
+    <path id="Vector_Stroke_2" data-name="Vector (Stroke)" d="M0,2.75A2.75,2.75,0,1,1,2.75,5.5,2.75,2.75,0,0,1,0,2.75ZM2.75,1.5A1.25,1.25,0,1,0,4,2.75,1.25,1.25,0,0,0,2.75,1.5Z" transform="translate(14.5 10)" fill="#192129"/>
+    <path id="Vector_Stroke_3" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h14.5A.75.75,0,0,1,16,.75v12a.75.75,0,0,1-.75.75H7.75a.75.75,0,0,1,0-1.5H14.5V1.5H1.5V12H3.75a.75.75,0,0,1,0,1.5h-3A.75.75,0,0,1,0,12.75Z" fill="#192129"/>
+    <path id="Vector_Stroke_4" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0H5.036a.75.75,0,0,1,.6.3l3.214,4.25A.75.75,0,0,1,9,5V9.25a.75.75,0,0,1-.75.75H5.156a.75.75,0,0,1,0-1.5H7.5V5.252L4.663,1.5H1.5V9.25a.75.75,0,0,1-1.5,0Z" transform="translate(14.5 3.5)" fill="#192129"/>
+  </g>
+</svg>

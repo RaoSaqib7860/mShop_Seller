@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.01" height="24.01" viewBox="0 0 24.01 24.01">
+  <g id="Transportation_truck-2" data-name="Transportation/truck-2" transform="translate(0.005 0.005)">
+    <g id="Group">
+      <path id="Path" d="M0,0H24.01V24.01H0Z" transform="translate(-0.005 -0.005)" fill="none"/>
+      <path id="Path-2" data-name="Path" d="M7.833.5H0" transform="translate(8.168 18.003)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path-3" data-name="Path" d="M4,12.505H6a1,1,0,0,0,1-1V5.388a2,2,0,0,0-.143-.743L5.5,1.258A2,2,0,0,0,3.647,0H0" transform="translate(15.001 5.997)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path-4" data-name="Path" d="M4,4H.5A.5.5,0,0,1,0,3.5V0H3.2" transform="translate(18.003 8.999)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path-5" data-name="Path" d="M2.562.44A1.5,1.5,0,1,1,.44.44h0a1.5,1.5,0,0,1,2.122,0Z" transform="translate(15.998 17.006)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path-6" data-name="Path" d="M2.562.44A1.5,1.5,0,1,1,.44.44h0a1.5,1.5,0,0,1,2.122,0h0" transform="translate(4.993 17.006)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path-7" data-name="Path" d="M3,14.506H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0h11a1,1,0,0,1,1,1v9" transform="translate(1.996 3.997)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path-8" data-name="Path" d="M13.005.5H0" transform="translate(1.996 13.501)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

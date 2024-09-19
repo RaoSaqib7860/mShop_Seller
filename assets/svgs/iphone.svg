@@ -1,0 +1,7 @@
+<svg id="Hardware_iphone" data-name="Hardware/iphone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Hardware_iphone-2" data-name="Hardware/iphone">
+    <path id="Vector_Stroke_" data-name="Vector (Stroke)" d="M2.25,1.5a.75.75,0,0,0-.75.75v17a.75.75,0,0,0,.75.75h10a.75.75,0,0,0,.75-.75v-17a.75.75,0,0,0-.75-.75ZM0,2.25A2.25,2.25,0,0,1,2.25,0h10A2.25,2.25,0,0,1,14.5,2.25v17a2.25,2.25,0,0,1-2.25,2.25h-10A2.25,2.25,0,0,1,0,19.25Z" transform="translate(4.75 1.25)" fill="#192129"/>
+    <path id="Vector_Stroke_2" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h2a.75.75,0,0,1,0,1.5h-2A.75.75,0,0,1,0,.75Z" transform="translate(10.25 4.25)" fill="#192129"/>
+    <path id="Vector_Stroke_3" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h4a.75.75,0,0,1,0,1.5h-4A.75.75,0,0,1,0,.75Z" transform="translate(9.25 18.25)" fill="#192129"/>
+  </g>
+</svg>

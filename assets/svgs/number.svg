@@ -1,0 +1,9 @@
+<svg id="Money_bank-card" data-name="Money/bank-card" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Money_bank-card-2" data-name="Money/bank-card">
+    <path id="Vector_Stroke_" data-name="Vector (Stroke)" d="M1.75,1.5a.25.25,0,0,0-.25.25v14a.25.25,0,0,0,.25.25h18a.25.25,0,0,0,.25-.25v-14a.25.25,0,0,0-.25-.25ZM0,1.75A1.75,1.75,0,0,1,1.75,0h18A1.75,1.75,0,0,1,21.5,1.75v14a1.75,1.75,0,0,1-1.75,1.75h-18A1.75,1.75,0,0,1,0,15.75Z" transform="translate(1.25 3.25)" fill="#192129"/>
+    <path id="Vector_Stroke_2" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h20a.75.75,0,0,1,0,1.5H.75A.75.75,0,0,1,0,.75Z" transform="translate(1.25 7.25)" fill="#192129"/>
+    <path id="Vector_Stroke_3" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h4.5a.75.75,0,0,1,0,1.5H.75A.75.75,0,0,1,0,.75Z" transform="translate(12.75 15.25)" fill="#192129"/>
+    <path id="Vector_Stroke_4" data-name="Vector (Stroke)" d="M.75,0A.75.75,0,0,1,1.5.75v8a.75.75,0,0,1-1.5,0v-8A.75.75,0,0,1,.75,0Z" transform="translate(21.25 4.25)" fill="#192129"/>
+    <path id="Vector_Stroke_5" data-name="Vector (Stroke)" d="M.75,0A.75.75,0,0,1,1.5.75v8a.75.75,0,0,1-1.5,0v-8A.75.75,0,0,1,.75,0Z" transform="translate(1.25 4.25)" fill="#192129"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.5" height="21.5" viewBox="0 0 21.5 21.5">
+  <g id="Others_local-pin" data-name="Others/local-pin" transform="translate(0)">
+    <path id="Vector_Stroke_" data-name="Vector (Stroke)" d="M0,4.75A4.75,4.75,0,1,1,4.75,9.5,4.75,4.75,0,0,1,0,4.75ZM4.75,1.5A3.25,3.25,0,1,0,8,4.75,3.25,3.25,0,0,0,4.75,1.5Z" transform="translate(6)" fill="#192129"/>
+    <path id="Vector_Stroke_2" data-name="Vector (Stroke)" d="M.75,0A.75.75,0,0,1,1.5.75v9a.75.75,0,0,1-1.5,0v-9A.75.75,0,0,1,.75,0Z" transform="translate(10 8)" fill="#192129"/>
+    <path id="Vector_Stroke_3" data-name="Vector (Stroke)" d="M4.126.334A.75.75,0,0,1,4.75,0h2a.75.75,0,0,1,0,1.5h-1.6l-3,4.5h17.2l-3-4.5h-1.6a.75.75,0,0,1,0-1.5h2a.75.75,0,0,1,.624.334l4,6A.75.75,0,0,1,20.75,7.5H.75A.75.75,0,0,1,.126,6.334Z" transform="translate(0 14)" fill="#192129"/>
+  </g>
+</svg>

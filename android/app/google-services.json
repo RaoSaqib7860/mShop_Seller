@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "905277565571",
+    "project_id": "housyseller",
+    "storage_bucket": "housyseller.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905277565571:android:ca114fda671e528be309b6",
+        "android_client_info": {
+          "package_name": "sellwith.housy.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905277565571-opgbfpno83nttt1aqij8qtp1nlosot2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTgxP9BxyTtv7vyhI77Lgd0-ThbsIDtR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905277565571-opgbfpno83nttt1aqij8qtp1nlosot2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

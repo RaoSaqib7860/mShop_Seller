@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Music_Audio_Filter_Settings_Sort" data-name="Music, Audio/Filter, Settings, Sort" transform="translate(0 0)">
+    <g id="Group" transform="translate(0 0)">
+      <g id="Group-2" data-name="Group" transform="translate(3 4)">
+        <path id="Path" d="M5.121.879a3,3,0,1,1-4.243,0A3,3,0,0,1,5.121.879Z" transform="translate(0 0)" fill="none" stroke="#868e96" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path-2" data-name="Path" d="M11,.5H0" transform="translate(6 2.5)" fill="none" stroke="#868e96" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path-3" data-name="Path" d="M5.121.879a3,3,0,1,1-4.243,0A3,3,0,0,1,5.121.879Z" transform="translate(12 10)" fill="none" stroke="#868e96" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path-4" data-name="Path" d="M0,.5H11" transform="translate(1 12.5)" fill="none" stroke="#868e96" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <path id="Path-5" data-name="Path" d="M0,0H24V24H0Z" fill="none"/>
+    </g>
+  </g>
+</svg>

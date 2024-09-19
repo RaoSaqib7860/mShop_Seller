@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group" transform="translate(-12 -12)">
+    <path id="Path" d="M0,0H24V24H0Z" transform="translate(12 12)" fill="none"/>
+    <path id="Path-2" data-name="Path" d="M8,0H3A3,3,0,0,0,0,3V4" transform="translate(15 15)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path-3" data-name="Path" d="M0,8H1A3,3,0,0,0,4,5V0" transform="translate(29 25)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path-4" data-name="Path" d="M6.31,4.083H.9a.9.9,0,0,1-.9-.9V0" transform="translate(18 22)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <circle id="Oval" cx="1.5" cy="1.5" r="1.5" transform="translate(22 30)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path-5" data-name="Path" d="M0,0H3.4A4.524,4.524,0,0,1,7.024,1.81l1.1,1.46a1.85,1.85,0,0,0,.653.545l2.123,1.061A2,2,0,0,1,12,6.665V8.15A1.35,1.35,0,0,1,10.65,9.5H10" transform="translate(15 22)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path-6" data-name="Path" d="M7,.5H0" transform="translate(15 31)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <circle id="Oval-2" data-name="Oval" cx="4" cy="4" r="4" transform="translate(26 14)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path-7" data-name="Path" d="M0,.5l1,1L2.5,0" transform="translate(28.75 17.387)" fill="none" stroke="#192129" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

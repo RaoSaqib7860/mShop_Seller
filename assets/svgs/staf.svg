@@ -1,0 +1,7 @@
+<svg id="Base_box" data-name="Base/box" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Base_box-2" data-name="Base/box">
+    <path id="Vector_Stroke_" data-name="Vector (Stroke)" d="M1.75,1.5a.25.25,0,0,0-.25.25v13a.25.25,0,0,0,.25.25h16a.25.25,0,0,0,.25-.25v-13a.25.25,0,0,0-.25-.25ZM0,1.75A1.75,1.75,0,0,1,1.75,0h16A1.75,1.75,0,0,1,19.5,1.75v13a1.75,1.75,0,0,1-1.75,1.75h-16A1.75,1.75,0,0,1,0,14.75Z" transform="translate(2.25 5.25)" fill="#192129"/>
+    <path id="Vector_Stroke_2" data-name="Vector (Stroke)" d="M0,.75A.75.75,0,0,1,.75,0h6a.75.75,0,0,1,0,1.5h-6A.75.75,0,0,1,0,.75Z" transform="translate(8.225 11.254)" fill="#192129"/>
+    <path id="Vector_Stroke_3" data-name="Vector (Stroke)" d="M3.686.256A.75.75,0,0,1,4.25,0h11a.75.75,0,0,1,.564.256l3.5,4a.75.75,0,1,1-1.129.988L14.91,1.5H4.59L1.314,5.244A.75.75,0,1,1,.186,4.256Z" transform="translate(2.25 1.75)" fill="#192129"/>
+  </g>
+</svg>
