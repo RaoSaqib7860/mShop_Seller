@@ -33,37 +33,35 @@ class _BottomSheetCustomState extends State<BottomSheetCustom> {
   bool? reel_active = false;
   @override
   Widget build(BuildContext context) {
-    return Obx(
-      () => PersistentTabView(
-        context,
-        screens: _buildScreens(),
-        items: _navBarsItems(reel_active: reel_active!),
-        controller: persistentcontroller,
-        confineInSafeArea: true,
-        navBarHeight: 46,
-        hideNavigationBar: hideNavbar.value,
-        // backgroundColor: reel_active! ? Colors.black : Colors.white,
-        backgroundColor: Theme.of(context).brightness == Brightness.light
-            ? Colors.white
-            : Colors.grey.shade800,
-        handleAndroidBackButtonPress: true,
-        resizeToAvoidBottomInset: true,
-        stateManagement: true,
-        hideNavigationBarWhenKeyboardShows: true,
-        onItemSelected: (index) {},
-        popAllScreensOnTapOfSelectedTab: true,
-        popActionScreens: PopActionScreensType.all,
-        itemAnimationProperties: ItemAnimationProperties(
-          duration: Duration(milliseconds: 200),
-          curve: Curves.ease,
-        ),
-        screenTransitionAnimation: ScreenTransitionAnimation(
-          animateTabTransition: true,
-          curve: Curves.ease,
-          duration: Duration(milliseconds: 200),
-        ),
-        navBarStyle: NavBarStyle.simple,
+    return PersistentTabView(
+      context,
+      screens: _buildScreens(),
+      items: _navBarsItems(reel_active: reel_active!),
+      controller: persistentcontroller,
+      confineInSafeArea: true,
+      navBarHeight: 46,
+      hideNavigationBar: hideNavbar.value,
+      // backgroundColor: reel_active! ? Colors.black : Colors.white,
+      backgroundColor: Theme.of(context).brightness == Brightness.light
+          ? Colors.white
+          : Colors.grey.shade800,
+      handleAndroidBackButtonPress: true,
+      resizeToAvoidBottomInset: true,
+      stateManagement: true,
+      hideNavigationBarWhenKeyboardShows: true,
+      onItemSelected: (index) {},
+      popAllScreensOnTapOfSelectedTab: true,
+      popActionScreens: PopActionScreensType.all,
+      itemAnimationProperties: ItemAnimationProperties(
+        duration: Duration(milliseconds: 200),
+        curve: Curves.ease,
       ),
+      screenTransitionAnimation: ScreenTransitionAnimation(
+        animateTabTransition: true,
+        curve: Curves.ease,
+        duration: Duration(milliseconds: 200),
+      ),
+      navBarStyle: NavBarStyle.simple,
     );
   }
 
