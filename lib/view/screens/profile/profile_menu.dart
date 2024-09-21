@@ -724,14 +724,14 @@ class _ProfileMenuState extends State<ProfileMenu> {
                                     : AppColors.whiteColor)),
                       ),
                       onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => WebViewGlobal(
-                                url: user_model.user!.contractLink,
-                                title: 'Seller Contract',
-                              ),
-                            ));
+                        // Navigator.push(
+                        //     context,
+                        //     MaterialPageRoute(
+                        //       builder: (context) => WebViewGlobal(
+                        //         url: user_model.user!.contractLink,
+                        //         title: 'Seller Contract',
+                        //       ),
+                        //     ));
                       },
                       title: Text(
                         'Seller Contract',

@@ -13,9 +13,9 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>sellwith.housy.app</string>
+	<string>seller.mshop.mate</string>
 	<key>PROJECT_ID</key>
-	<string>housyseller</string>
+	<string>mateseller</string>
 	<key>STORAGE_BUCKET</key>
 	<string>housyseller.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>

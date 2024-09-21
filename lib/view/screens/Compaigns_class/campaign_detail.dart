@@ -305,7 +305,7 @@ class _CampaignDetailScreenState extends State<CampaignDetailScreen> {
                                           builder: (context) => WebViewGlobal(
                                             url:
                                                 getAllProduct!.data[index].link,
-                                            title: 'Housy',
+                                            title: 'Mate Seller',
                                           ),
                                         ));
                                   },

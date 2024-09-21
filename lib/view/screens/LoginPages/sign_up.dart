@@ -45,11 +45,12 @@ class _SignUpScreenState extends State<SignUpScreen> with SignupRepository {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SizedBox(
-                          height: 3.h,
+                          height: 10.h,
                         ),
                         Container(
-                            height: 180,
-                            child: SvgPicture.asset('assets/svgs/app_logo.svg')),
+                          height: 100,
+                          child: Image.asset('assets/image/logo_circle.png'),
+                        ),
                         CustomTextFields(
                           controller: nameController,
                           labelText: 'Full Name'.tr,
@@ -187,7 +188,7 @@ class _SignUpScreenState extends State<SignUpScreen> with SignupRepository {
                               children: [
                                 TextSpan(
                                   text:
-                                      'By signup you are agree to the Housy,'.tr,
+                                      'By signup you are agree to the mSeller Mate,'.tr,
                                 ),
                                 TextSpan(
                                   recognizer: new TapGestureRecognizer()
@@ -197,7 +198,7 @@ class _SignUpScreenState extends State<SignUpScreen> with SignupRepository {
                                           MaterialPageRoute(
                                             builder: (context) => WebViewGlobal(
                                               url:
-                                                  'https://housy.ae/pages/policies/privacy-policy/',
+                                                  'https://mateslive.com/PrivacyPolicy_Terms.html',
                                               title: 'Privacy Policy',
                                             ),
                                           ));
@@ -222,7 +223,7 @@ class _SignUpScreenState extends State<SignUpScreen> with SignupRepository {
                                           MaterialPageRoute(
                                             builder: (context) => WebViewGlobal(
                                               url:
-                                                  'https://housy.ae/pages/policies/terms-conditions/',
+                                                  'https://mateslive.com/PrivacyPolicy_Terms.html',
                                               title: 'Terms & Condition',
                                             ),
                                           ));

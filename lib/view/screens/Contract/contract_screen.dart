@@ -128,7 +128,7 @@ class _ContractScreenState extends State<ContractScreen> {
                             onTap: () async {
                               File? file = await _downloadFile(
                                   url: '${downloadModel!.documentUrl}',
-                                  filename: 'Housy_Contract.pdf');
+                                  filename: 'Mate_Contract.pdf');
 
                               if (file != null) {
                                 print(file.path);

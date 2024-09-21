@@ -209,7 +209,7 @@ class _MonthlyReportsScreenState extends State<MonthlyReportsScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'HOUSY COMMISSION.  ',
+                                    'Mate COMMISSION.  ',
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontFamily: AppFonts.segoeui,

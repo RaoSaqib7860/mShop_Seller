@@ -485,7 +485,7 @@ class _OrderScreenState extends State<OrderScreen> {
                                 ),
                                 child: Text(
                                   'Delivered by : ' +
-                                      '${model.data![index].deliveredBySeller == 2 ? 'Not Assigned' : model.data![index].deliveredBySeller == 1 ? 'Seller' : 'Housy'}',
+                                      '${model.data![index].deliveredBySeller == 2 ? 'Not Assigned' : model.data![index].deliveredBySeller == 1 ? 'Seller' : 'Mate'}',
                                   style: TextStyle(
                                       fontFamily: AppFonts.segoeui,
                                       fontSize: 14),

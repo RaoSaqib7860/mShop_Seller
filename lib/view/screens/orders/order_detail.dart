@@ -322,7 +322,7 @@ class _OrderDetailState extends State<OrderDetail> with orderDetailRepository {
                                         TextStyle(fontFamily: AppFonts.segoeui))
                                 .translate(),
                             Checkbox(
-                                value: deliverd_by == 'Housy'.tr,
+                                value: deliverd_by == 'Mate'.tr,
                                 onChanged: (v) {
                                   show_cupertino_alert(
                                       context: context,
@@ -334,7 +334,7 @@ class _OrderDetailState extends State<OrderDetail> with orderDetailRepository {
                                             .deliveredBySeller = 0;
                                         state.response.data!.deliveredByHousy =
                                             1;
-                                        deliverd_by = 'Housy'.tr;
+                                        deliverd_by = 'Mate'.tr;
                                         DataProvider.update_delivarable_by_api(
                                             id: widget.Id,
                                             object: {

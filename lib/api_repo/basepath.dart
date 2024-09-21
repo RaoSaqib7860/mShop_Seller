@@ -1,5 +1,5 @@
-const baseURL = 'https://staging.housy.ae/api/v2/';
+const baseURL = 'https://dev-shop-api.mateslive.com/index.php/api/v2/';
 const imageUrl = 'https://api.housy.ae/public/';
 const authToken = '13';
-//https://staging.housy.ae/api/v2/
-//https://api.housy.ae/api/v2/
+//https://dev-shop-api.mateslive.com/index.php/api/v2
+//https://shop-api.mateslive.com/index.php/api/v2

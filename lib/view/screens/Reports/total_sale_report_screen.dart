@@ -34,7 +34,8 @@ class _TotalSaleReportScreenState extends State<TotalSaleReportScreen> {
     getListData();
     setState(() {});
   }
-  bool isShowingMainData=true;
+
+  bool isShowingMainData = true;
   @override
   void initState() {
     apiCall();
@@ -47,10 +48,11 @@ class _TotalSaleReportScreenState extends State<TotalSaleReportScreen> {
   @override
   Widget build(BuildContext context) {
     return totalSaleModel == null
-        ? Center(child: Shimmer.fromColors(
-            baseColor: Colors.grey.shade300,
-            highlightColor: Colors.grey.shade100,
-            child: ShimmerScreen()))
+        ? Center(
+            child: Shimmer.fromColors(
+                baseColor: Colors.grey.shade300,
+                highlightColor: Colors.grey.shade100,
+                child: ShimmerScreen()))
         : SingleChildScrollView(
             child: Container(
               height: 100.h,
@@ -190,7 +192,7 @@ class _TotalSaleReportScreenState extends State<TotalSaleReportScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'HOUSY COMMISSION  ',
+                                    'Mate COMMISSION  ',
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontFamily: AppFonts.segoeui,
@@ -274,8 +276,10 @@ class _TotalSaleReportScreenState extends State<TotalSaleReportScreen> {
                               children: <Widget>[
                                 Expanded(
                                   child: Padding(
-                                    padding: const EdgeInsets.only(right: 16, left: 6),
-                                    child: ReportTotalGraph(list_of_total_sale: chartData),
+                                    padding: const EdgeInsets.only(
+                                        right: 16, left: 6),
+                                    child: ReportTotalGraph(
+                                        list_of_total_sale: chartData),
                                   ),
                                 ),
                                 const SizedBox(
@@ -350,7 +354,8 @@ class _TotalSaleReportScreenState extends State<TotalSaleReportScreen> {
             ),
           );
   }
- Widget ShimmerScreen(){
+
+  Widget ShimmerScreen() {
     return SingleChildScrollView(
       child: Container(
         height: 100.h,
@@ -397,12 +402,10 @@ class _TotalSaleReportScreenState extends State<TotalSaleReportScreen> {
                           height: 2.h,
                         ),
                         Row(
-                          mainAxisAlignment:
-                          MainAxisAlignment.spaceBetween,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Row(
-                              crossAxisAlignment:
-                              CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
                                   height: 2.h,
@@ -448,7 +451,6 @@ class _TotalSaleReportScreenState extends State<TotalSaleReportScreen> {
                               width: 20.w,
                               color: Colors.grey.shade300,
                             ),
-
                           ],
                         ),
                         SizedBox(
@@ -492,14 +494,14 @@ class _TotalSaleReportScreenState extends State<TotalSaleReportScreen> {
                   width: 90.w,
                   color: Colors.grey.shade200,
                 ),
-
               ],
             ),
           ],
         ),
       ),
     );
- }
+  }
+
   getListData() {
     print(
         'step 1 ${totalSaleModel!.data!.dateWiseSales!.toJson().entries.length}');

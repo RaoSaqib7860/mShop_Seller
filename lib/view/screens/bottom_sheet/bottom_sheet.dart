@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-
+import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import '../../../utils_services/colors_util.dart';
 import '../CommossionHistoryClass/commission_history_screen.dart';
 import '../DashBoared/DashBoaredMainScreen.dart';
@@ -38,9 +37,9 @@ class _BottomSheetCustomState extends State<BottomSheetCustom> {
       screens: _buildScreens(),
       items: _navBarsItems(reel_active: reel_active!),
       controller: persistentcontroller,
-      confineInSafeArea: true,
+      //confineInSafeArea: true,
       navBarHeight: 46,
-      hideNavigationBar: hideNavbar.value,
+      //hideNavigationBar: hideNavbar.value,
       // backgroundColor: reel_active! ? Colors.black : Colors.white,
       backgroundColor: Theme.of(context).brightness == Brightness.light
           ? Colors.white
@@ -48,19 +47,19 @@ class _BottomSheetCustomState extends State<BottomSheetCustom> {
       handleAndroidBackButtonPress: true,
       resizeToAvoidBottomInset: true,
       stateManagement: true,
-      hideNavigationBarWhenKeyboardShows: true,
+      //hideNavigationBarWhenKeyboardShows: true,
       onItemSelected: (index) {},
-      popAllScreensOnTapOfSelectedTab: true,
-      popActionScreens: PopActionScreensType.all,
-      itemAnimationProperties: ItemAnimationProperties(
-        duration: Duration(milliseconds: 200),
-        curve: Curves.ease,
-      ),
-      screenTransitionAnimation: ScreenTransitionAnimation(
-        animateTabTransition: true,
-        curve: Curves.ease,
-        duration: Duration(milliseconds: 200),
-      ),
+      // popAllScreensOnTapOfSelectedTab: true,
+      // popActionScreens: PopActionScreensType.all,
+      // itemAnimationProperties: ItemAnimationProperties(
+      //   duration: Duration(milliseconds: 200),
+      //   curve: Curves.ease,
+      // ),
+      // screenTransitionAnimation: ScreenTransitionAnimation(
+      //   animateTabTransition: true,
+      //   curve: Curves.ease,
+      //   duration: Duration(milliseconds: 200),
+      // ),
       navBarStyle: NavBarStyle.simple,
     );
   }

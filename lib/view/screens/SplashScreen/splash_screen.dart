@@ -8,6 +8,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+import 'package:sizer/sizer.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:mShop_Seller/api_repo/api_utils.dart';
 import 'package:mShop_Seller/model/App%20Check%20Virsion/app_check_version.dart';
@@ -396,13 +397,12 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff192129),
+      backgroundColor: Colors.black,
       body: Center(
         child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 20),
-            child: SvgPicture.asset(
-              'assets/svgs/image_logo.svg',
-              color: Colors.white,
+            height: 15.h,
+            child: Image.asset(
+              'assets/image/splash_logo.png',
             )),
       ),
     );

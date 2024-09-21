@@ -1,4 +1,4 @@
-package sellwith.housy.app;
+package seller.mshop.mate;
 
 import io.flutter.embedding.android.FlutterActivity;
 

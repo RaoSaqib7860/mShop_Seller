@@ -64,7 +64,7 @@ class _ViewContractState extends State<ViewContract> {
                     print('contractLink = ${user_model.user!.contractLink}');
                     File? file = await _downloadFile(
                         url: '${user_model.user!.contractLink}',
-                        filename: 'Housy_Contract.pdf');
+                        filename: 'Mate_Contract.pdf');
                     if (file != null) {
                       print(file.path);
                       OpenFile.open(file.path);

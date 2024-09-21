@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.sellwith.housy.app.onesignal</string>
+		<string>group.seller.mshop.mate.onesignal</string>
 	</array>
 </dict>
 </plist>

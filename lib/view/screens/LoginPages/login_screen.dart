@@ -44,15 +44,14 @@ class _LoginScreenState extends State<LoginScreen> with LoginRepository {
             child: Column(
               children: [
                 SizedBox(
-                  height: 10.0.h,
+                  height: 15.0.h,
                 ),
                 Container(
-                  height: 200,
-                  child: SvgPicture.asset('assets/svgs/app_logo.svg'),
-                  // color: Theme.of(context).brightness == Brightness.light ? Colors.white : Colors.black12,
+                  height: 100,
+                  child: Image.asset('assets/image/logo_circle.png'),
                 ),
                 SizedBox(
-                  height: 3.0.h,
+                  height: 7.0.h,
                 ),
                 CustomTextFields(
                   controller: emailController,

@@ -107,7 +107,8 @@ class _DashBoardMainScreenState extends State<DashBoardMainScreen> {
         ((double.parse(cMonth.toString()) - double.parse(lMonth.toString())) *
                 100) /
             double.parse(lMonth.toString());
-    return profit.isNaN ? 0 : profit.round();
+    print('profit...${profit}');
+    return profit.isInfinite ? 0 : profit.round();
   }
 
   NotificationModel? notification_model;

@@ -173,7 +173,7 @@ class _MediaPageState extends State<MediaPage> {
                                         builder: (context) => WebViewGlobal(
                                           url:
                                               "${imageUrl}${productMedia!.data![index].fileName}",
-                                          title: 'Housy',
+                                          title: 'Mate Seller',
                                         ),
                                       ));
                                 } else {

@@ -31,11 +31,11 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
               Container(
                   child: Html(
                 data: """
-<h2 style="text-align: center;">&nbsp; &nbsp; &nbsp;Housy</h2>
+<h2 style="text-align: center;">&nbsp; &nbsp; &nbsp;Mate Seller</h2>
 <h2 style="text-align: center;">&nbsp; &nbsp; &nbsp;Terms and Condition</h2>
 <p>1. <strong>Introduction</strong></p>
-<p>Welcome to <strong>Housy</strong>.</p>
-<p><strong>Housy</strong> (&ldquo;us&rdquo;, &ldquo;we&rdquo;, or &ldquo;our&rdquo;) operates&nbsp;<a href="%3Ca%20data-fr- linked=">https://www.housy.com/</a>&quot;&gt;<a href="https://www.housy.com/">https://www.housy.com/</a><strong>&nbsp;</strong>(herei nafter referred to as <strong>&ldquo;Service&rdquo;</strong>).</p>
+<p>Welcome to <strong>Mate Seller</strong>.</p>
+<p><strong>Mate Seller</strong> (&ldquo;us&rdquo;, &ldquo;we&rdquo;, or &ldquo;our&rdquo;) operates&nbsp;<a href="%3Ca%20data-fr- linked=">https://www.housy.com/</a>&quot;&gt;<a href="https://www.housy.com/">https://www.housy.com/</a><strong>&nbsp;</strong>(herei nafter referred to as <strong>&ldquo;Service&rdquo;</strong>).</p>
 <p>Our Privacy Policy governs your visit to&nbsp;<a href="%3Ca%20data-fr- linked=">https://www.housy.com/</a>&quot;&gt;<a href="https://www.housy.com/">https://www.housy.com/</a><strong>&nbsp;</strong> and explains how we collect, safeguard and disclose information that results from your use of our Service.</p>
 <p>We use your data to provide and improve Service. By using Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.</p>
 <p>Our Terms and Conditions (<strong>&ldquo;Terms&rdquo;</strong>) govern all use of our Service and together with the Privacy Policy constitutes your agreement with us (<strong>&ldquo;agreement&rdquo;</strong>).</p> <p>The&nbsp;following&nbsp;Terms&nbsp;of&nbsp;Use&nbsp;(this&nbsp;&ldquo;Agreement &rdquo;) govern&nbsp;and&nbsp;regulate&nbsp;your&nbsp;access&nbsp;to and&nbsp;use of&nbsp;<a href="%3Ca%20data-fr-linked=">https://www.housy.com/</a>&quot;&gt;<a href="https://www.housy.com/">https://www.housy.com/</a><strong>&nbsp;</strong> and&nbsp;all&nbsp;affiliated&nbsp;websites&nbsp;owned&nbsp;and&nbsp;operated&nbsp;b y&nbsp;Housy&nbsp;(as&nbsp;defined&nbsp;in the&nbsp;subsequentparagraph),&nbsp;including&nbsp;all&nbsp;subdomains,&nbsp;subdirec tories,&nbsp;mobile&nbsp;sites,&nbsp;and mobile applications &nbsp;thereof&nbsp;(collectively, &nbsp;the&nbsp;&ldquo;Housy&nbsp;Website&rdquo;). &nbsp;This&nbsp;Agreement &nbsp;is&nbsp;made&nbsp;between Housy&nbsp;and&nbsp;you,&nbsp;whether&nbsp;you&nbsp;are&nbsp;an&nbsp;End&nbsp;Us er&nbsp;or&nbsp;aPartner&nbsp;(as&nbsp;defined&nbsp;in&nbsp;Section&nbsp;1&nbsp;of& nbsp;this Agreement).</p>
