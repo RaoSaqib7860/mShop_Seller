@@ -74,7 +74,7 @@ class _TotalSaleReportScreenState extends State<TotalSaleReportScreen> {
                                   filename: 'Total Sales Report.pdf');
                               if (file != null) {
                                 print(file.path);
-                                await Share.shareFiles(['${file.path}']);
+                                await Share.shareXFiles([XFile('${file.path}')]);
                               }
                             },
                             child: Container(

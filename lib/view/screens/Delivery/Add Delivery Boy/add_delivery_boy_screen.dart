@@ -85,7 +85,7 @@ class _AddDeliveryBoyScreenState extends State<AddDeliveryBoyScreen>
   final licensepicker = ImagePicker();
 
   Future getImageFromGallery() async {
-    final pickedFile = await picker.getImage(
+    final pickedFile = await picker.pickImage(
       source: ImageSource.gallery,
     );
     setState(() {
@@ -96,7 +96,7 @@ class _AddDeliveryBoyScreenState extends State<AddDeliveryBoyScreen>
   }
 
   Future getVisaImageFromGallery() async {
-    final pickedFile = await visapicker.getImage(
+    final pickedFile = await visapicker.pickImage(
       source: ImageSource.gallery,
     );
     setState(() {
@@ -107,7 +107,7 @@ class _AddDeliveryBoyScreenState extends State<AddDeliveryBoyScreen>
   }
 
   Future getLicenseImageFromGallery() async {
-    final pickedFile = await licensepicker.getImage(
+    final pickedFile = await licensepicker.pickImage(
       source: ImageSource.gallery,
     );
     setState(() {

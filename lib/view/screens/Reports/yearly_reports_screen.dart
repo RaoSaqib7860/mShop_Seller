@@ -93,7 +93,7 @@ class _ReportsScreenState extends State<ReportsScreen> {
                                   filename: 'Yearly Sales.pdf');
                               if (file != null) {
                                 print(file.path);
-                                await Share.shareFiles(['${file.path}']);
+                                await Share.shareXFiles([XFile('${file.path}')]);
                               }
                             },
                             child: Container(

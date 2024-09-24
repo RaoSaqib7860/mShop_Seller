@@ -1728,7 +1728,7 @@ class _ProductDetailPageState extends State<ProductDetailPage>
                       },
                     ),
                   ],
-                  position: PullDownMenuPosition.under,
+                  position: PullDownMenuPosition.over,
                   buttonBuilder: (context, showMenu) => CupertinoButton(
                     onPressed: showMenu,
                     padding: EdgeInsets.only(left: 10),

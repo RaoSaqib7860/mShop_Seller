@@ -58,7 +58,7 @@ class _WebViewGlobalState extends State<WebViewGlobal> {
                           filename: 'Seller Contract.pdf');
                       if (file != null) {
                         print(file.path);
-                        await Share.shareFiles(['${file.path}']);
+                        await Share.shareXFiles([XFile('${file.path}')]);
                       }
                     },
                     icon: Icon(

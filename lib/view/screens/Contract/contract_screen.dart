@@ -132,7 +132,7 @@ class _ContractScreenState extends State<ContractScreen> {
 
                               if (file != null) {
                                 print(file.path);
-                                Share.shareFiles([file.path],
+                                Share.shareXFiles([XFile(file.path)],
                                     text: 'Download Contract');
                                 snackBarSuccess('File download successfully');
                               }

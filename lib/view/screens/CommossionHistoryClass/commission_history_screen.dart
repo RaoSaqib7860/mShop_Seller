@@ -58,7 +58,7 @@ class _CommissionHistoryScreenState extends State<CommissionHistoryScreen> {
   final picker = ImagePicker();
 
   Future<File?> getImageFromGallery() async {
-    final pickedFile = await picker.getImage(
+    final pickedFile = await picker.pickImage(
       source: ImageSource.gallery,
     );
     if (pickedFile != null) {

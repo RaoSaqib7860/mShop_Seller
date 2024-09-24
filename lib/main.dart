@@ -109,11 +109,8 @@ class _MyAppState extends State<MyApp> {
                   navigatorKey: navigatorKey,
                   //locale: DevicePreview.locale(context),
                   // builder: DevicePreview.appBuilder,
-                  // theme: ThemeData.light(),
+                  theme: ThemeData.light(),
                   // darkTheme: ThemeData.dark(),
-                  theme: ThemeData(
-                    primarySwatch: Colors.blue,
-                  ),
                   themeMode: _themeMode,
                   darkTheme: ThemeData.light(),
                   home: statusBarStyle(child: SplashScreen()),

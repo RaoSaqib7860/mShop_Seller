@@ -110,7 +110,7 @@ class _MediaDetailsState extends State<MediaDetails> {
                     print(file.path);
                     // snackBarSuccess(
                     //     'File download successfully'.tr);
-                    await Share.shareFiles(['${file.path}'], text: 'Report');
+                    await Share.shareXFiles([XFile('${file.path}')], text: 'Report');
                   }
                 }
               },

@@ -182,7 +182,7 @@ class _DashBoardMainScreenState extends State<DashBoardMainScreen> {
                       position: badges.BadgePosition.topEnd(top: -10, end: -2),
                       showBadge: true,
                       ignorePointer: false,
-                      badgeColor: Colors.red,
+                      //badgeColor: Colors.red,
                       badgeContent: Text('',
                           style: TextStyle(fontSize: 10, color: Colors.white)),
                       child: Icon(Icons.notifications_none_sharp,
