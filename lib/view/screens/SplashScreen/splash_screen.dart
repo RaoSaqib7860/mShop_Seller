@@ -1,29 +1,28 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:math';
-
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:sizer/sizer.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:mShop_Seller/api_repo/api_utils.dart';
-import 'package:mShop_Seller/model/App%20Check%20Virsion/app_check_version.dart';
 import 'package:mShop_Seller/model/login/login_model.dart';
 import 'package:mShop_Seller/utils_services/storage_util.dart';
 import 'package:mShop_Seller/view/screens/bottom_sheet/bottom_sheet.dart';
 import 'dart:io' show Platform;
+import '../../../api_repo/basepath.dart';
 import '../../../main.dart';
 import '../../../model/Notification/notification_payload..dart';
 import '../../../utils_services/GooogleMapSearchAddress.dart';
 import '../../../utils_services/global_variable.dart';
 import '../../conectivity/connectivity.dart';
+import '../Check app version/maintenance_screen.dart';
 import '../LoginPages/login_screen.dart';
 import '../orders/order_detail.dart';
-AppVersionCheckModel? appVersionCheckModel;
+
 @pragma('vm:entry-point')
 void notificationTapBackground(NotificationResponse notificationResponse) {
   print('Clicked notification ');
@@ -44,11 +43,14 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   bool active_noti_route = false;
 
-  appVersionCheck(BuildContext? context) async {
-    appVersionCheckModel = await DataProvider.verify_app_selles_version();
+  appVersionCheck(BuildContext context) async {
+    final remoteConfig = FirebaseRemoteConfig.instance;
+    await remoteConfig.setConfigSettings(RemoteConfigSettings(
+      fetchTimeout: const Duration(seconds: 5),
+      minimumFetchInterval: const Duration(seconds: 0),
+    ));
+    await remoteConfig.fetchAndActivate();
     versionCheckApi(context);
-     print('app check version ${appVersionCheckModel!.toJson()}');
-    setState(() {});
   }
 
   int getExtendedVersionNumber(String version) {
@@ -58,61 +60,65 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   String? version;
-
-  versionCheckApi(BuildContext? context) async {
+  versionCheckApi(BuildContext context) async {
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
     version = packageInfo.version;
-    print('object app version ${version}');
-
-    String v1 =Platform.isAndroid?
-    '${appVersionCheckModel!.data![7].value}':
-    '${appVersionCheckModel!.data![1].value}',
-    // '${appVersionCheckModel!.data![4].value}'.length == 3
-    //     ? '${appVersionCheckModel!.data![4].value}.0'
-    //     : '${appVersionCheckModel!.data![4].value}',
-        v2 = '${version}';
+    final remoteConfig = FirebaseRemoteConfig.instance;
+    baseURL = await remoteConfig.getString('base_url');
+    var data = await remoteConfig
+        .getString(Platform.isAndroid ? 'android_version' : 'ios_version');
+    String v1 = '${data}', v2 = '${version}';
+    print('versions = $v1 and $v2');
     int v1Number = getExtendedVersionNumber(v1);
     int v2Number = getExtendedVersionNumber(v2);
+    print(
+        'ios_match_version... ${await remoteConfig.getBool(Platform.isAndroid ? 'android_match_version' : 'ios_match_version')}');
     if (v1Number > v2Number && v1Number != v2Number) {
-      if (Platform.isAndroid?
-      appVersionCheckModel!.data![8].value == '1':
-      appVersionCheckModel!.data![2].value == '1') {
+      if (await remoteConfig.getBool(Platform.isAndroid
+              ? 'android_match_version'
+              : 'ios_match_version') ==
+          true) {
         InternetConnectivity().check_connection_stream();
-       // FlutterNativeSplash.remove();
         oneSignalNotificationConfigration().then((value) {
-          show_Dialog(context!);
+          show_Dialog_Splash(context);
         });
-        Navigator.of(context!).pop();
       } else {
         InternetConnectivity().check_connection_stream();
-        //FlutterNativeSplash.remove();
         oneSignalNotificationConfigration().then((value) {
-          show_Dialog_Splash(context!);
+          show_Dialog(context);
         });
-        Navigator.of(context!).pop();
+        Navigator.of(context).pop();
       }
-    }
-    else {
+    } else {
       print('call second object');
       InternetConnectivity().check_connection_stream();
-      //FlutterNativeSplash.remove();
-      oneSignalNotificationConfigration().then((value) {
-        if (storage.hasData('userData')) {
-          user_model = LoginModel.fromJson(storage.read('userData'));
-          print('userData = ${user_model.toJson()}');
-          Timer(Duration(seconds: 3), () {
-            if (!active_noti_route) {
-              Navigator.of(context!).pushReplacement(MaterialPageRoute(
-                  builder: (BuildContext context) => BottomSheetCustom()));
-            }
+      oneSignalNotificationConfigration().then((value) async {
+        if (await remoteConfig.getBool(Platform.isAndroid
+            ? 'android_app_on_maintenance'
+            : 'ios_app_on_maintenance')) {
+          print('on mainntanncae');
+          Future.delayed(Duration(milliseconds: 3000), () {
+            Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (BuildContext context) => MaintenanceScreen()));
           });
         } else {
-          Timer(Duration(seconds: 3), () {
-            if (!active_noti_route) {
-              Navigator.of(context!).pushReplacement(MaterialPageRoute(
-                  builder: (BuildContext context) => LoginScreen()));
-            }
-          });
+          if (storage.hasData('userData')) {
+            user_model = LoginModel.fromJson(storage.read('userData'));
+            print('userData = ${user_model.toJson()}');
+            Timer(Duration(seconds: 3), () {
+              if (!active_noti_route) {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (BuildContext context) => BottomSheetCustom()));
+              }
+            });
+          } else {
+            Timer(Duration(seconds: 3), () {
+              if (!active_noti_route) {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (BuildContext context) => LoginScreen()));
+              }
+            });
+          }
         }
       });
     }
@@ -143,17 +149,17 @@ class _SplashScreenState extends State<SplashScreen> {
                 CupertinoDialogAction(
                   child: Text("UPDATE", style: TextStyle(color: Colors.blue)),
                   onPressed: () async {
+                    final remoteConfig = FirebaseRemoteConfig.instance;
                     if (Platform.isAndroid) {
                       String? url =
-                          '${appVersionCheckModel!.data![6].value}';
-                      if (await canLaunch(url)) {
-                        await launch(url);
+                          await remoteConfig.getString('android_app_url');
+                      if (await canLaunchUrl(Uri.parse(url))) {
+                        await launchUrl(Uri.parse(url));
                       }
                     } else if (Platform.isIOS) {
-                      String? url =
-                          '${appVersionCheckModel!.data![5].value}';
-                      if (await canLaunch(url)) {
-                        await launch(url);
+                      String? url = await remoteConfig.getString('ios_app_url');
+                      if (await canLaunchUrl(Uri.parse(url))) {
+                        await launchUrl(Uri.parse(url));
                       }
                     }
                   },
@@ -163,26 +169,28 @@ class _SplashScreenState extends State<SplashScreen> {
                   onPressed: () {
                     oneSignalNotificationConfigration().then((value) {
                       if (storage.hasData('userData')) {
-                        user_model = LoginModel.fromJson(storage.read('userData'));
+                        user_model =
+                            LoginModel.fromJson(storage.read('userData'));
                         print('userData = ${user_model.toJson()}');
                         Timer(Duration(seconds: 3), () {
                           if (!active_noti_route) {
-                            Navigator.of(context).pushReplacement(MaterialPageRoute(
-                                builder: (BuildContext context) => BottomSheetCustom()));
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        BottomSheetCustom()));
                           }
                         });
-                      }
-                      else {
+                      } else {
                         Timer(Duration(seconds: 3), () {
                           if (!active_noti_route) {
-                            Navigator.of(context).pushReplacement(MaterialPageRoute(
-                                builder: (BuildContext context) => LoginScreen()));
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        LoginScreen()));
                           }
                         });
                       }
                     });
-
-                    //Navigator.of(context).pop();
                   },
                 ),
               ],
@@ -216,17 +224,17 @@ class _SplashScreenState extends State<SplashScreen> {
                 CupertinoDialogAction(
                   child: Text("UPDATE", style: TextStyle(color: Colors.blue)),
                   onPressed: () async {
+                    final remoteConfig = FirebaseRemoteConfig.instance;
                     if (Platform.isAndroid) {
                       String? url =
-                          '${appVersionCheckModel!.data![6].value}';
-                      if (await canLaunch(url)) {
-                        await launch(url);
+                          await remoteConfig.getString('android_app_url');
+                      if (await canLaunchUrl(Uri.parse(url))) {
+                        await launchUrl(Uri.parse(url));
                       }
                     } else if (Platform.isIOS) {
-                      String? url =
-                          '${appVersionCheckModel!.data![5].value}';
-                      if (await canLaunch(url)) {
-                        await launch(url);
+                      String? url = await remoteConfig.getString('ios_app_url');
+                      if (await canLaunchUrl(Uri.parse(url))) {
+                        await launchUrl(Uri.parse(url));
                       }
                     }
                   },

@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "905277565571",
-    "project_id": "housyseller",
-    "storage_bucket": "housyseller.appspot.com"
+    "project_number": "689354082078",
+    "project_id": "mate-seller",
+    "storage_bucket": "mate-seller.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:905277565571:android:ca114fda671e528be309b6",
+        "mobilesdk_app_id": "1:689354082078:android:ed725201335d56091a2b0f",
         "android_client_info": {
           "package_name": "seller.mshop.mate"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "905277565571-opgbfpno83nttt1aqij8qtp1nlosot2g.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDTgxP9BxyTtv7vyhI77Lgd0-ThbsIDtR4"
+          "current_key": "AIzaSyAACzcl1oABWp7_8dNXxWo_uDoKLKGAqj8"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "905277565571-opgbfpno83nttt1aqij8qtp1nlosot2g.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

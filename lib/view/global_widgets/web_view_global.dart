@@ -71,18 +71,18 @@ class _WebViewGlobalState extends State<WebViewGlobal> {
           height: height,
           child: Stack(
             children: [
-              WebView(
-                initialUrl: Uri.parse('${widget.url}').toString(),
-                javascriptMode: JavascriptMode.unrestricted,
-                onWebViewCreated: (WebViewController webViewController) {
-                  _controller.complete(webViewController);
-                },
-                onPageFinished: (v) {
-                  print('completed');
-                  load = true;
-                  setState(() {});
-                },
-              ),
+              // WebView(
+              //   initialUrl: Uri.parse('${widget.url}').toString(),
+              //   javascriptMode: JavascriptMode.unrestricted,
+              //   onWebViewCreated: (WebViewController webViewController) {
+              //     _controller.complete(webViewController);
+              //   },
+              //   onPageFinished: (v) {
+              //     print('completed');
+              //     load = true;
+              //     setState(() {});
+              //   },
+              // ),
               if (!load)
                 Center(
                   child: screenLoader(use_opacity: false),

@@ -1,6 +1,6 @@
 {
   "name": "onesignal_flutter",
-  "version": "3.5.3",
+  "version": "3.5.1",
   "summary": "The OneSignal Flutter SDK",
   "description": "Allows you to easily add OneSignal to your flutter projects, to make sending and handling push notifications easy",
   "homepage": "https://www.onesignal.com",
@@ -21,7 +21,7 @@
 
     ],
     "OneSignalXCFramework": [
-      "3.12.9"
+      "3.12.4"
     ]
   },
   "platforms": {

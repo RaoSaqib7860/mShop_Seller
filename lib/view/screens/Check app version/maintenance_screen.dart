@@ -19,11 +19,11 @@ class _MaintenanceScreenState extends State<MaintenanceScreen> {
             : Colors.black,
         elevation: 0,
         centerTitle: true,
-        leading: InkWell(
-            onTap: (){
-              Navigator.of(context).pop();
-            },
-            child: Icon(Icons.arrow_back_ios,color: Colors.black)),
+        // leading: InkWell(
+        //     onTap: (){
+        //       Navigator.of(context).pop();
+        //     },
+        //     child: Icon(Icons.arrow_back_ios,color: Colors.black)),
         // title: Text(
         //   'Maintenance'.tr,
         //   style: TextStyle(

@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -112,22 +115,29 @@ class _LoginScreenState extends State<LoginScreen> with LoginRepository {
                   height: 6.0.h,
                 ),
                 InkWell(
-                  onTap: () {
-                    if(appVersionCheckModel!.data![3].value == '2'){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => MaintenanceScreen(),));
-                    }else{
-                      if(InternetConnectivity.internet_available == true){
+                  onTap: () async {
+                    final remoteConfig = FirebaseRemoteConfig.instance;
+                    bool? on_maintenance = await remoteConfig.getBool(
+                        Platform.isAndroid
+                            ? 'android_app_on_maintenance'
+                            : 'ios_app_on_maintenance');
+                    if (on_maintenance) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => MaintenanceScreen(),
+                          ));
+                    } else {
+                      if (InternetConnectivity.internet_available == true) {
                         if (formKey.currentState!.validate()) {
                           loginBloc.add(LoginEvent(
                               email: emailController.text,
                               password: passwordController.text));
                         }
-                      }else{
+                      } else {
                         snackBarSuccess('Internet connection not available');
                       }
                     }
-
-
                   },
                   child: Container(
                     width: 250.0,
@@ -190,12 +200,21 @@ class _LoginScreenState extends State<LoginScreen> with LoginRepository {
                   height: 3.0.h,
                 ),
                 InkWell(
-                  onTap: (){
-                    if(appVersionCheckModel!.data![4].value == '2'){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => MaintenanceScreen(),));
-                    }else{
-                      Navigator.of(context)
-                          .push(MaterialPageRoute(builder: (c) => SignUpScreen()));
+                  onTap: () async {
+                    final remoteConfig = FirebaseRemoteConfig.instance;
+                    bool? on_maintenance = await remoteConfig.getBool(
+                        Platform.isAndroid
+                            ? 'android_app_on_maintenance'
+                            : 'ios_app_on_maintenance');
+                    if (on_maintenance) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => MaintenanceScreen(),
+                          ));
+                    } else {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (c) => SignUpScreen()));
                     }
                   },
                   child: Text.rich(
@@ -203,9 +222,10 @@ class _LoginScreenState extends State<LoginScreen> with LoginRepository {
                       style: TextStyle(
                           fontFamily: AppFonts.segoeui,
                           fontSize: 12,
-                          color: Theme.of(context).brightness == Brightness.light
-                              ? Color(0xff000000)
-                              : Colors.white
+                          color:
+                              Theme.of(context).brightness == Brightness.light
+                                  ? Color(0xff000000)
+                                  : Colors.white
                           //color: const Color(0xff000000),
                           ),
                       children: [
@@ -214,19 +234,30 @@ class _LoginScreenState extends State<LoginScreen> with LoginRepository {
                         ),
                         TextSpan(
                           recognizer: new TapGestureRecognizer()
-                            ..onTap = () {
-                              if(appVersionCheckModel!.data![4].value == '2'){
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => MaintenanceScreen(),));
-                              }else{
-                                Navigator.of(context)
-                                    .push(MaterialPageRoute(builder: (c) => SignUpScreen()));
+                            ..onTap = () async {
+                              final remoteConfig =
+                                  FirebaseRemoteConfig.instance;
+                              bool? on_maintenance = await remoteConfig.getBool(
+                                  Platform.isAndroid
+                                      ? 'android_app_on_maintenance'
+                                      : 'ios_app_on_maintenance');
+                              if (on_maintenance) {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => MaintenanceScreen(),
+                                    ));
+                              } else {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (c) => SignUpScreen()));
                               }
                             },
                           text: 'Sign up'.tr,
                           style: TextStyle(
-                            color: Theme.of(context).brightness == Brightness.light
-                                ? Color(0xff192129)
-                                : Colors.white,
+                            color:
+                                Theme.of(context).brightness == Brightness.light
+                                    ? Color(0xff192129)
+                                    : Colors.white,
                             //color: const Color(0xff192129),
                             fontWeight: FontWeight.w700,
                             fontFamily: AppFonts.segoeui,

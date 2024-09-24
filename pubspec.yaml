@@ -95,6 +95,7 @@ dependencies:
   dismissible_page: ^1.0.2
   email_validator: ^3.0.0
   visibility_detector:
+  firebase_remote_config: ^5.1.2
 
 dev_dependencies:
   flutter_test:

@@ -39,7 +39,6 @@ typedef NS_ENUM(NSUInteger, ONE_S_LOG_LEVEL) {
 };
 
 + (void)setLogLevel:(ONE_S_LOG_LEVEL)logLevel;
-+ (ONE_S_LOG_LEVEL)getLogLevel;
 + (void)onesignalLog:(ONE_S_LOG_LEVEL)logLevel message:(NSString* _Nonnull)message;
 
 @end
