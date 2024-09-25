@@ -464,7 +464,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>webview_flutter.xcscheme</key>
+		<key>webview_flutter_wkwebview-webview_flutter_wkwebview_privacy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>webview_flutter_wkwebview.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C62825B628631BFD7AD90BF817C32BF6"
-               BuildableName = "webview_flutter.framework"
-               BlueprintName = "webview_flutter"
+               BlueprintIdentifier = "1600DCCFF1B483EC49C8CB09BBB7411C"
+               BuildableName = "webview_flutter_wkwebview_privacy.bundle"
+               BlueprintName = "webview_flutter_wkwebview-webview_flutter_wkwebview_privacy"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

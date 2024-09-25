@@ -76,7 +76,7 @@ dependencies:
     path: ./plugin/google_maps_place_picker
   open_file: ^3.3.2
   path_provider: ^2.0.11
-  webview_flutter: 2.0.4
+  webview_flutter: ^4.9.0
   syncfusion_flutter_charts: 20.3.60
   fl_chart:
   animate_do: ^3.0.2
